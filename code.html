@@ -1,0 +1,108 @@
+<!-- Work Experience Page -->
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Alanna Pasco</title>
+
+  <link rel="stylesheet" href="stylesheets/code.css">
+  <link rel="stylesheet" href="stylesheets/github-light.css">
+  <meta name="viewport" content="width=device-width">
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<div id="tabs">
+  <a class="view" href="index.html"> Home </a> |
+  <a class="view" href="story.html"> Story </a> |
+  <a class="active" href="#code"> Programming Experience </a>
+</div>
+
+<body>
+  <div class="wrapper">
+
+    <h4 id="reposMsg">GitHub repositories of the following projects and more are available upon request</h4>
+
+    <section>
+        <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fish Game Server</h2>
+        <img alt="UML Diagram" class="demo-left" src="resources/sundown_diagram.png">
+        <p>
+          CS 4500 Software Development - Fall 2020<br>
+          Roughly 8,000 lines of Java and 7 pages of interface design <br><br>
+          <b>Project Description:</b> Design and implement a gaming system that hosts games of <i>Hey, That’s my Fish!</i> and provides a server to which hackers can connect AI players to compete in tournaments. Project implemented from the bottom up starting with game pieces, full game and tournament play, and finally the client/server components.
+          Project completed while fully participating in Northeastern’s key undergraduate software development course — without enrolling.
+          That’s correct, you will not find CS 4500 on my transcript. With the permission of Professor Felleisen, I partook in this course after being told I had to wait another year to meet the requirements to.
+          Many undergraduates consider this course the most challenging of their career and I simply did not wish to wait to experience it. According to Professor Felleisen, I earned an A for the equivalent MS level course.<br><br>
+          <b>Project highlights:</b>
+          <ul>
+            <li>Semester-long <b>pair programming</b> collaboration</li>
+            <li>Wrote detailed <b>design documents</b>, defended design choices</li>
+            <li>Presented <b>two code walks</b> for class of 50 students as well as a 1-hour final code walk with course staff  </li>
+            <li><b>Integration tests</b> for each milestone; unit tests for each file</li>
+            <li>A <b>complex tree data structure to lazily generate</b> future game outcomes for strategizing and determining game rules mid-game</li>
+            <li>Implemented a potential hacker’s AI player-software using the <b>minimax algorithm strategy</b></li>
+            <li>Designed and wrote <b>player API</b> protocol documentation</li>
+            <li>Made design decisions mindful of potential security threats to internal system</li>
+            <li>Implemented <b>remote-proxy pattern</b>, bringing together the server-side game system and client-side AI players</li>
+          </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Language-Prediction Tool</h2>
+        <img alt="Code Demo" class="demo-right" src="resources/lp.png">
+        <p>
+          DS 2000 Fundamentals of Data Science - Spring 2018<br>
+          Python and Statistics<br><br>
+          <b>Project Description:</b> Build a language-prediction tool to predict which langauge a given document is written in.
+          The tool is effective on documents written in one of seven languages included in the sample set.
+          To clarify, we were given a set of 37 documents written in one of the seven languages.
+          The document filenames all included which language they were written, except for 3 docs which had the word 'unknown' included in the filenames. We were then
+          set to implement our tool given these resources.<br><br>
+          <b>Method:</b>
+          <ol>
+            <li>Create two dictionaries: one for files we <i>do</i> know the language of, and one for unknown files</li>
+            <li><b>Read in</b> the input files</li>
+            <li><b>Delegate and Store</b> each input file as such:
+              <ul><li>key = [file name] or [unknown#] where the # corresponds to the order with which the tool encountered the unknown files</li>
+                  <li>value = one long string that is the contents of the file</li></ul>
+            <li><b>Clean all data</b> (removing punctuation and spaces)</li>
+            <li>Collect and analyze the <b>frequency of trigrams</b> (3-character subsequences) in the files</li>
+            <li><b>Normalize the trigram frequencies</b></li>
+            <li><b>Calculate the cosine similarity</b> between trigram collections of unknown files and known files</li>
+            <li>Match the unknown documents with the languages they have the greatest cosine similarity index with</li>
+            <li>Organize output and <b>store</b> in output file indicated in sys args</li>
+          </ol>
+        </p>
+    </section>
+
+    <section>
+        <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Light 'Em All</h2>
+        <img alt="UML Diagram" class="demo-left" src="resources/lea.gif">
+        <p>
+          CS 2510 Fundamentals of CS II - Spring 2018<br>
+          Java and Graph Theory<br><br>
+          <b>Project Description:</b> Implement <i>Light ‘Em All</i>, a game where the player connects wires by rotating tiles and moves the power station across the wires until the entire grid is connected and lit. The catch: The power station is weak and only exerts power up to a particular radius from the station, so once all the wires are connected the user must use the arrow keys to find a point on the grid where all its edges are reachable by light. <br><br>
+          <b>Project highlights:</b>
+          <ul>
+            <li>Identified the <b>minimum spanning tree</b> of the game's underlying graph using <b>Kruskal’s algorithm</b> to generate the continuous wire grid before randomly rotating tiles for gameplay</li>
+            <li>Calculated <b>radius of power</b> by finding the furthest distance between any two nodes and cutting that in half</li>
+            <li>Used <b>breadth first search</b> to traverse tiles stemming from power station and light only the tiles within the radius of power; Implemented gradient color to make closer nodes brighter than further nodes</li>
+            <li>Implemented the option to generate a <b>biased graph</b> toward more horizontal or vertical wires by increasing the weight of horizontal or vertical edges respectively</li>
+            <li>Implemented <b>hexagonal version</b> of the game where tiles are 6-sided </li>
+          </ul>
+        </p>
+    </section>
+
+    <footer>
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+
+  </div>
+  <script src="javascripts/scale.fix.js"></script>
+</body>
+</html>
