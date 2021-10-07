@@ -161,9 +161,10 @@ th {
   color:#444;
 }
 
+/* max-width is adjusted depending on left- or right- alignment
 img {
-  max-width:100%;
-}
+  max-width:50%;
+} */
 
 strong {
   color:#222;
@@ -212,7 +213,7 @@ p + ol {
 }
 
 .demo-right {
-  max-width: 50%;
+  max-width: 60%;
   max-height: 90%;
   float: right;
   margin-left: 5%;
