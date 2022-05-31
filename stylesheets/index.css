@@ -306,6 +306,10 @@ footer {
     text-align: center;
   }
 
+  ul {
+    text-align: left;
+  }
+
   body {
     word-wrap:break-word;
   }
@@ -326,6 +330,10 @@ footer {
 @media print, screen and (max-width: 480px) {
   body, header {
     text-align: center;
+  }
+
+  ul {
+    text-align: left;
   }
 
   body {
