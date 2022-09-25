@@ -54,13 +54,13 @@
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
 }
 
-/*DESKTOP CSS */
+/*DESKTOP */
 
 #tabs {
-  text-align: center;
   width: 100%;
   margin-bottom: 5%;
   font-size: 20px;
+  text-align: center;
 }
 
 #expTabHeaederMsg {
@@ -318,6 +318,14 @@ footer {
 /* MOBILE CSS*/
 
 @media print, screen and (max-width: 480px) {
+  #tabs {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 16px;
+    text-align: center;
+  }
+
   body, header {
     text-align: center;
   }
