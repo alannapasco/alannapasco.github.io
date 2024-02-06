@@ -1,4 +1,8 @@
 <!-- Personal website-->
+<!-- A Class name can be used by multiple HTML elements -->
+<!-- define CSS on a class with .className -->
+<!-- An ID name must only be used by ONE HTML element within the page -->
+<!-- define CSS on an ID with #idName -->
 
 <!doctype html>
 <html>
@@ -8,59 +12,66 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>Alanna Pasco</title>
 
-  <link rel="stylesheet" href="stylesheets/index.css">
-  <link rel="stylesheet" href="stylesheets/github-light.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
-<div id="tabs">
-  <a class="active" href=""> Home </a> |
-  <a class="view" href="thoughts/1_.html"> Thoughts </a> |
-  <a class="view" href="code.html"> Experience </a>
-</div>
 
+<body id="home_content">
+  <div class="wrapper">
 
-<body>
-  <div id="main" class="wrapper">
-    <header>
-      <h1>Welcome</h1>
-      <p><img id="profile-photo" src="resources/website-photo.JPG" alt="Personal Photo"></p>
-      <b>Connect</b><br>
-      <a target="_blank" href="https://www.linkedin.com/in/alanna-pasco-8918028b/">Linkedin</a> |
-      <a target="_blank" href="https://github.com/alannapasco">GitHub</a> |
-      <a target="_blank" href="resources/AlannaPasco_Resume.pdf">My resume</a><br>
-      pasco.a@northeastern.edu<br><br>
-    </header>
-
-    <section id="introduction-section">
-
-        <p> Hi there. My name is Alanna, but most call me Lana. (she/her) </p>
-
-        Currently:
-        <ul>
-          <li><b>Software Engineer Intern</b> at Amazon Web Services <a target="_blank" href="https://aws.amazon.com/"><img src="resources/aws-logo-1.png" alt="aws icon" width=40></a></li>
-          <li><b>MSCS</b> @ <b>Northeastern</b> 2023</li>
-          <li>Microsoft <a target="_blank" href="https://www.microsoft.com/en-us/teals">TEALS</a> volunteer</li>
-        </ul>
-
-        Formerly:
-        <ul>
-          <li><b>Software Engineer Co-op</b> at Chewy <a target="_blank" href="https://www.chewy.com">🐶</a></li>
-          <li>BA in International Affairs @ Northeastern 2020</li>
-          <li>Program Coordinator for Dialogue summer program in Jordan 2017-2020</li>
-          <li>Specialist at the Cambridgeside Apple Store 📱 2014-2016</li>
-        </ul>
-
+    <section id="visual_header">
+      <span id="home_tab" class="tab">Alanna Pasco</span>
+      <span id="right_tabs">
+        <span id="about_tab" class="tab">About</span>
+        <span style="color:#363636">|</span>
+        <span id="work_tab" class="tab">Work</span>
+      </span>
+      <div class="space"></div>
     </section>
 
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
+    <section class="body_text" id="connect_top">
+      <b style="color:#363636;">Connect</b><br>
+      <a target="_blank" href="https://www.linkedin.com/in/alanna-pasco-8918028b/">Linkedin</a> |
+      <a target="_blank" href="https://github.com/alannapasco">GitHub</a> |
+      <a target="_blank" href="resources/AlannaPasco.pdf">Resume</a><br>
+      pasco.a@northeastern.edu<br><br>
+    </section>
+
+    <img id="profile_photo" src="resources/Coffee_profile_photo.JPG" alt="Personal Photo">
+
+    <section class="body_text" id="introduction_text">
+      <h1>Welcome</h1>
+        <p>
+          Hi there. My name is Alanna, but most call me Lana. (she/her) <br>
+        <ul>
+          <li><b>Software Engineer </b> that values human-centered, accessible software.
+          <li>Passionately building equitable K-12 computer science programs as a Microsoft <a target="_blank" href="https://www.microsoft.com/en-us/teals">TEALS</a> volunteer</li>
+          <li><b>MSCS</b> @ <b>Northeastern</b> 2023</li>
+          <li>Former Software Engineer Intern at Amazon Web Services <a target="_blank" href="https://aws.amazon.com/"><img src="resources/aws-logo-1.png" alt="aws icon" width=40></a></li>
+          <li>Former Software Engineer Co-op at Chewy <a target="_blank" href="https://www.chewy.com">🐶</a></li>
+        </ul>
+        </p>
+    </section>
+
+    <section class="body_text" id="connect_bot">
+      <b style="color:#363636;">Connect</b><br>
+      <a target="_blank" href="https://www.linkedin.com/in/alanna-pasco-8918028b/">Linkedin</a> |
+      <a target="_blank" href="https://github.com/alannapasco">GitHub</a> |
+      <a target="_blank" href="resources/AlannaPasco.pdf">Resume</a><br>
+      pasco.a@northeastern.edu<br><br>
+    </section>
+
+    <footer><p><small>Hosted on GitHub Pages</small></p></footer>
 
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="javascript/tab_management.js"></script>
+    <script src="javascript/scale.fix.js"></script>
   </body>
+
 </html>
