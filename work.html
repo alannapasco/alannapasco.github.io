@@ -16,13 +16,17 @@
     <![endif]-->
 </head>
 
-<div id="tabs">
-  <a class="view" href="index.html"> Home </a> |
-  <a class="view" href="thoughts/1_.html"> Thoughts </a> |
-  <a class="active" href=""> Experience </a>
-</div>
-
 <body>
+  
+  <!-- HEADING -->
+  <script src="javascript/header.js"></script>
+  <script>
+    const header = createHeader();
+    document.body.prepend(header);
+  </script>
+  <!------------->
+
+
   <div class="wrapper">
 
     <div id="expTabHeaederMsg">
@@ -131,6 +135,6 @@
     </footer>
 
   </div>
-  <script src="javascripts/scale.fix.js"></script>
+  <script src="javascript/scale.fix.js"></script>
 </body>
 </html>

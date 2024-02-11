@@ -7,6 +7,9 @@ function createHeader() {
         <style>
         header {
             padding-bottom:40px;
+            font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-weight:400;
         }
           
         nav {
@@ -34,9 +37,9 @@ function createHeader() {
 
         <a href="index.html"><nav id="home_tab">Alanna Pasco</nav></a>
         <nav id="right_tabs">
-            <span class="tab"><a href="about.html" >About</a></span>
+            <span class="tab"><a href="thoughts.html">About</a></span>
             <span style="color:#363636">|</span>
-            <span class="tab"><a href="code.html" >Work</a></span>
+            <span class="tab"><a href="work.html">Work</a></span>
         </nav>
     `;
     return header;
