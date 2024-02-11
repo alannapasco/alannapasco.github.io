@@ -103,7 +103,6 @@ hr {
   }
 }
 
-
 @media print, screen and (max-width: 480px) {
   header {
     width: 100%;
@@ -120,6 +119,6 @@ hr {
     bottom: 0;
     right: 0;
   }
-
 }
+
 

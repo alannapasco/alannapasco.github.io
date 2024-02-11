@@ -1,4 +1,4 @@
-<!-- Programming Experience Page -->
+<!-- Programming Etc. Experience Page -->
 
 <!doctype html>
 <html>
@@ -9,7 +9,9 @@
   <title>Alanna Pasco</title>
 
   <link rel="stylesheet" href="css/work.css">
-  <link rel="stylesheet" href="stylesheets/github-light.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width">
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,117 +20,13 @@
 
 <body>
   
-  <!-- HEADING -->
+  <!-- HEADER -->
   <script src="javascript/header.js"></script>
-  <script>
-    const header = createHeader();
-    document.body.prepend(header);
-  </script>
   <!------------->
 
-  <section>
-      <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TopDog Android Dog Walking App</h2>
-
-      <img alt="TopDog App Preview" width="1500" class="demo-right" src="resources/TopDogPreview.png">
-      <p>
-        CS 5520 Mobile App Development - Summer 2021<br>
-
-
-        Android Development in Java, Android Studio  <br><br>
-
-
-        <b>Project Description:</b> Designed and implemented TopDog, an Android
-        app written in Java for dog owners to connect, track/share dog walks,
-        set reminders for dog care, and more. My primarily role on the team of
-        five designers/developers was back-end development.
-
-
-        <b>My individual contributions included:</b>
-        <ul>
-          <li>Collaborated on <b>ideation</b> of main features, including the GPS walk tracker, leaderboard, user stats page, and profile page </li>
-          <li>Collaborative self-discovery of <b>Google API</b> and <b>GPS services</b> </li>
-          <li><b>Designed data representation</b> of User, user data in Java</li>
-          <li>Implemented log in/sign up features, menu navigation</li>
-          <li><b>Created/stored/managed user data in Firebase Realtime Database</b></li>
-          <li>Developed <b>utility class to put/fetch user data off main GUI thread</b> to minimize UI latency</li>
-          <li>Maintained <b>explicit control over de/serialization</b> of database objects</li>
-          <li>Resolved major race condition using Java’s Future and ExecutorService to track progress of asynchronous tasks</li>
-        </ul>
-      </p>
-  </section>
-
-  <section>
-      <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fish Game Server</h2>
-      <img alt="UML Diagram" class="demo-left" src="resources/sundown_diagram.png">
-      <p>
-        CS 4500 Software Development - Fall 2020<br>
-        Roughly 8,000 lines of Java and 7 pages of interface design <br><br>
-        <b>Project Description:</b> Design and implement a gaming system that hosts games of
-        <i>Hey, That’s my Fish!</i> and provides a server to which hackers can connect AI
-        players to compete in tournaments. Project implemented from the bottom up starting
-        with game pieces, full game and tournament play, and finally the client/server components.
-        Project completed while auditing Northeastern’s key undergraduate software development course.
-        Please note that due to the audit, the course does not appear on my transcript. <br><br>
-        <b>Project highlights:</b>
-        <ul>
-          <li>Semester-long <b>pair programming</b> collaboration</li>
-          <li>Wrote detailed <b>design documents</b>, defended design choices</li>
-          <li>Presented <b>two code walks</b> for class of 50 students as well as a 1-hour final code walk with course staff  </li>
-          <li><b>Integration tests</b> for each milestone; unit tests for each file</li>
-          <li>A <b>complex tree data structure to lazily generate</b> future game outcomes for strategizing and determining game rules mid-game</li>
-          <li>Implemented a potential hacker’s AI player-software using the <b>minimax algorithm strategy</b></li>
-          <li>Designed and wrote <b>player API</b> protocol documentation</li>
-          <li>Made design decisions mindful of potential security threats to internal system</li>
-          <li>Implemented <b>remote-proxy pattern</b>, bringing together the server-side game system and client-side AI players</li>
-        </ul>
-      </p>
-  </section>
-
-  <section>
-      <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Language-Prediction Tool</h2>
-      <img alt="Code Demo" class="demo-right" src="resources/lp.png">
-      <p>
-        DS 2000 Fundamentals of Data Science - Spring 2018<br>
-        Python and Statistics<br><br>
-        <b>Project Description:</b> Build a language-prediction tool to predict which langauge a given document is written in.
-        The tool is effective on documents written in one of seven languages included in the sample set.
-        To clarify, we were given a set of 37 documents written in one of the seven languages.
-        The document filenames all included which language they were written, except for 3 docs which had the word 'unknown' included in the filenames. We were then
-        set to implement our tool given these resources.<br><br>
-        <b>Method:</b>
-        <ol>
-          <li>Create two dictionaries: one for files we <i>do</i> know the language of, and one for unknown files</li>
-          <li><b>Read in</b> the input files</li>
-          <li><b>Delegate and Store</b> each input file as such:
-            <ul><li>key = [file name] or [unknown#] where the # corresponds to the order with which the tool encountered the unknown files</li>
-                <li>value = one long string that is the contents of the file</li></ul>
-          <li><b>Clean all data</b> (removing punctuation and spaces)</li>
-          <li>Collect and analyze the <b>frequency of trigrams</b> (3-character subsequences) in the files</li>
-          <li><b>Normalize the trigram frequencies</b></li>
-          <li><b>Calculate the cosine similarity</b> between trigram collections of unknown files and known files</li>
-          <li>Match the unknown documents with the languages they have the greatest cosine similarity index with</li>
-          <li>Organize output and <b>store</b> in output file indicated in sys args</li>
-        </ol>
-      </p>
-  </section>
-
-  <section>
-      <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Light 'Em All</h2>
-      <img alt="UML Diagram" class="demo-left" src="resources/lea.gif">
-      <p>
-        CS 2510 Fundamentals of CS II - Spring 2018<br>
-        Java and Graph Theory<br><br>
-        <b>Project Description:</b> Implement <i>Light ‘Em All</i>, a game where the player connects wires by rotating tiles and moves the power station across the wires until the entire grid is connected and lit. The catch: The power station is weak and only exerts power up to a particular radius from the station, so once all the wires are connected the user must use the arrow keys to find a point on the grid where all its edges are reachable by light. <br><br>
-        <b>Project highlights:</b>
-        <ul>
-          <li>Identified the <b>minimum spanning tree</b> of the game's underlying graph using <b>Kruskal’s algorithm</b> to generate the continuous wire grid before randomly rotating tiles for gameplay</li>
-          <li>Calculated <b>radius of power</b> by finding the furthest distance between any two nodes and cutting that in half</li>
-          <li>Used <b>breadth first search</b> to traverse tiles stemming from power station and light only the tiles within the radius of power; Implemented gradient color to make closer nodes brighter than further nodes</li>
-          <li>Implemented the option to generate a <b>biased graph</b> toward more horizontal or vertical wires by increasing the weight of horizontal or vertical edges respectively</li>
-          <li>Implemented <b>hexagonal version</b> of the game where tiles are 6-sided </li>
-        </ul>
-      </p>
-  </section>
+  <!-- PROJECT CARDS -->
+  <script src="javascript/generate_project_cards.js"></script>
+  <!------------->
 
   <footer><p><small>Hosted on GitHub Pages</small></p></footer>
 
