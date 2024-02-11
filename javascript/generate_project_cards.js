@@ -1,6 +1,7 @@
 const projects = [
     {
         title: "TopDog Android Dog Walking App",
+        tags: ["school project", "java", "android"],
         context: "CS5520 Mobile App Development, Summer 2021",
         tools: "Android Development in Java, Android Studio",
         status: "Complete",
@@ -19,6 +20,7 @@ const projects = [
     },
     {
         title: "Fish Game Server",
+        tags: ["school project", "java"],
         context: "CS 4500 Software Development - Fall 2020",
         tools: "Roughly 8,000 lines of Java & 7 pages of interface design",
         status: "Complete",
@@ -43,6 +45,7 @@ const projects = [
     },
     {
         title: "Language-Prediction Tool",
+        tags: ["school project", "python", "data science"],
         context: "DS 2000 Fundamentals of Data Science - Spring 2018",
         tools: "Python and Statistics",
         status: "Complete",
@@ -68,6 +71,7 @@ const projects = [
     },
     {
         title: "Light 'Em All",
+        tags: ["school project", "java"],
         context: "CS 2510 Fundamentals of CS II - Spring 2018",
         tools: "Java and Graph Theory",
         status: "Complete",
@@ -84,14 +88,17 @@ const projects = [
 ];
 
 //Create uniform project cards. To insert a new project to the site, add it to the list of projects above.
-document.styleSheets
 const portfolioContainer = document.createElement('main');
-let imagePlacement = false; // false == left image placement / true == right image placement 
+let imagePlacement = "img-right"; //aligns images in alternating right-left sides of the page 
     
 projects.forEach((project) => {
     const projectCard = createProjectCard(project, imagePlacement);
     portfolioContainer.appendChild(projectCard);
-    imagePlacement = !imagePlacement;
+    if (imagePlacement == "img-left") {
+        imagePlacement = "img-right";
+    } else {
+        imagePlacement = "img-left";
+    }
 });
 
 document.body.appendChild(portfolioContainer);
@@ -108,12 +115,7 @@ function createProjectCard(project, imagePlacement) {
 
     /*image + alt*/
     const imageElement = document.createElement("img");
-    //aligns images in alternating left-right sides of the page 
-    if (imagePlacement) {
-        imageElement.classList.add("demo-left");
-    } else {
-        imageElement.classList.add("demo-right");
-    }
+    imageElement.classList.add(imagePlacement); 
     imageElement.src = project.image;
     imageElement.alt = project.image_alt;
     projectCard.appendChild(imageElement);
