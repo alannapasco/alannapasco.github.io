@@ -6,7 +6,7 @@ function createHeader() {
     `
         <style>
         header {
-            padding-bottom:30px;
+            padding-bottom:40px;
         }
           
         nav {
@@ -30,8 +30,8 @@ function createHeader() {
             position: relative;
             padding-top: 0.5%;
         }
-
         </style>
+
         <a href="index.html"><nav id="home_tab">Alanna Pasco</nav></a>
         <nav id="right_tabs">
             <span class="tab"><a href="about.html" >About</a></span>

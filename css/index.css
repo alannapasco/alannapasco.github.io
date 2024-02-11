@@ -10,14 +10,6 @@ body {
   color:#625d5d;
 }
 
-#connect_top { 
-  display: none;
-}
-
-#connect_bot { 
-  display: inline;
-}
-
 #profile_photo {
   width:30%;
   float:right;
@@ -83,14 +75,6 @@ hr {
     width:auto;
     margin:0;
     text-align: center;
-  }
-
-  #connect_top { 
-    display: inline;
-  }
-
-  #connect_bot { 
-    display: none;
   }
 
   #profile_photo {
