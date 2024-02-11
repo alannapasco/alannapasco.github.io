@@ -3,11 +3,12 @@
 body {
   width:860px;
   margin:0 auto;
+  padding:50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: 'Roboto', sans-serif;
   font-weight:400;
-  padding:50px;
-  color:#625d5d;
+  color:#727272;
+  
 }
 
 #profile_photo {

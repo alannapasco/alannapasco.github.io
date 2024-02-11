@@ -1,26 +1,13 @@
 /*DESKTOP */
 
-#visual_header #home_tab{
-  font-size: 30px;
-  text-align: left;
-  position: relative;
-  color:#363636
-}
-
-#visual_header #right_tabs{ 
-  font-size: 25px;
-  float: right;
-  position: relative;
-  color:#39c;
-  padding-top: 0.5%;
-}
-
-#visual_header #home_tab:hover{
-  color:rgb(46, 84, 103);
-}
-
-.tab:hover {
-  color:#069;
+body {
+  width:860px;
+  margin:0 auto;
+  padding:50px;
+  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight:400;
+  color:#727272;
 }
 
 .space {
@@ -29,14 +16,6 @@
 
 #expTabHeaederMsg {
   text-align: center;
-}
-
-body {
-  background-color: #fff;
-  padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#727272;
-  font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -205,11 +184,6 @@ footer {
     text-align: left;
   }
 
-  div.wrapper {
-    width:auto;
-    margin:0;
-  }
-
   header, section, footer {
     position:static;
     width:auto;
@@ -282,13 +256,6 @@ footer {
 /* MOBILE CSS*/
 
 @media print, screen and (max-width: 480px) {
-  #tabs {
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    font-size: 16px;
-    text-align: center;
-  }
 
   body, header {
     text-align: center;
