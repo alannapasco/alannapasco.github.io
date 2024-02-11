@@ -1,22 +1,30 @@
 <!-- Personal website-->
-<!-- A Class name can be used by multiple HTML elements -->
-<!-- define CSS on a class with .className -->
-<!-- An ID name must only be used by ONE HTML element within the page -->
-<!-- define CSS on an ID with #idName -->
 
 <!-- 
-  Toggle Preview - cmd+shift+v
-  Open Preview to the Side - cmd+k v -->
+  A Class name can be used by multiple HTML elements
+  define CSS on a class with .className
+
+  An ID name must only be used by ONE HTML element within the page
+  define CSS on an ID with #idName 
+-->
+
+<!-- 
+VSCode Preview - only works when stylesheets are in same dir as html
+  - Toggle Preview - cmd+shift+v
+  - Open Preview to the Side - cmd+k v 
+-->
 
 <!doctype html>
 <html>
 
+
 <head>
+  <!-- <head> tag used for metadata, external resources, etc. no visible content -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>Alanna Pasco</title>
 
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -25,18 +33,16 @@
 </head>
 
 
-<body id="home_content">
-  <div class="wrapper">
+<body>
 
-    <section id="visual_header">
-      <span id="home_tab" class="tab">Alanna Pasco</span>
-      <span id="right_tabs">
-        <span id="about_tab" class="tab">About</span>
-        <span style="color:#363636">|</span>
-        <span id="work_tab" class="tab">Work</span>
-      </span>
-      <div class="space"></div>
-    </section>
+    <!-- HEADING -->
+    <script src="header.js"></script>
+    <script>
+        const header = createHeader();
+        document.body.prepend(header);
+    </script>
+    <!------------->
+
 
 
     <section class="body_text" id="connect_top">
@@ -73,7 +79,7 @@
 
     <footer><p><small>Hosted on GitHub Pages</small></p></footer>
 
-    </div>
+    
     <script src="javascript/tab_management.js"></script>
     <script src="javascript/scale.fix.js"></script>
   </body>
