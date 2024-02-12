@@ -20,13 +20,12 @@ header.innerHTML =
         position: relative;
         color:#363636;
         padding: 4px;
-        border: 1px solid #FFFFFF;
+        border: 2px solid #FFFFFF;
         border-radius: 16px;
     }
         
     header #home_tab:hover{
-        color:rgb(46, 84, 103);
-        border: 1px solid #069;
+        border: 2px solid #e4dbdb;
         border-radius: 16px;
     }
         

@@ -15,7 +15,7 @@
 
 const projects = [
     {
-        title: "Amazon Web Services - Elastic File System Internship",
+        title: "Amazon Web Services Internship - Elastic File System",
         tags: ["code-professional-exp"],
         context: "AWS 3-month Internship - Fall 2022",
         tools: "Python, Typescript, AWS Cloud Development Kit, AWS AppConfig, IaC/IaaS",
@@ -31,7 +31,7 @@ const projects = [
             <li>Mitigated canary false alarms via more robust test sets, instant config update/deployment, and robust config validation</li>`,
     },
     {
-        title: "Chewy - Practice Hub Prescription Management Co-op",
+        title: "Chewy Co-op - Practice Hub Prescription Management",
         tags: ["code-professional-exp"],
         context: "Chewy 6-month Internship - Spring 2022",
         tools: "Python, Django, GraphQL / Kotlin, RxJava, Android",
@@ -117,7 +117,7 @@ const projects = [
         image: "resources/workimg_website_figma.png",
         image_alt: "A screenshot of figma.com showcasing the design of this personal website/portfolio",
         description: `In Fall 2021 I was applying to dozens of coops when I noticed most applications had an optional field for a personal website/portfolio. I decided I wanted to have something for those boxes and with virtually no web development experience what-so-ever threw together this static af website in 24 hours.`,
-        highlights_description: `<br><br>Things I am now using this website to learn:`,
+        highlights_description: `<br><br>Things I am slowly but surely using this website to learn:`,
         highlights: ` 
             <li>figma</li>
             <li>HTML/css/Javascript foundations</li>
@@ -128,7 +128,7 @@ const projects = [
             `
     },
     {
-        title: "Language-Prediction Tool",
+        title: "Language Prediction Tool",
         tags: ["code-project"],
         context: "DS 2000 Fundamentals of Data Science - Spring 2018",
         tools: "Python and Statistics",
@@ -171,7 +171,7 @@ const projects = [
     }
 ];
 
-//Create uniform project cards. To insert a new project to the site, add it to the list of projects above.
+//Create uniform project cards. 
 const portfolioContainer = document.createElement('main');
 let imagePlacement = "img-right"; //aligns images in alternating right-left sides of the page 
     
@@ -184,12 +184,12 @@ projects.forEach((project) => {
         imagePlacement = "img-left";
     }
 });
-
 document.body.appendChild(portfolioContainer);
 
 
 function createProjectCard(project, imagePlacement) {
     const projectCard = document.createElement("section");
+    projectCard.setAttribute('data-tags', JSON.stringify(project.tags));
     projectCard.classList.add("project-card");
 
     /*title*/
@@ -229,4 +229,32 @@ function createProjectCard(project, imagePlacement) {
     projectCard.appendChild(highlightsElement);
 
     return projectCard;
+}
+
+
+//Filter cards based on tags
+function filterProjects(clickedTag) {
+    const projectCards = document.querySelectorAll('.project-card');
+    const filterButtons = document.querySelectorAll('.filter-button');
+
+    // Remove 'selected' class from all filter buttons
+    filterButtons.forEach(button => {
+        button.classList.remove('selected');
+    });
+
+    // Add 'selected' class to the clicked filter button
+    const clickedButton = document.querySelector(`#${clickedTag}`);
+    clickedButton.classList.add('selected');
+
+    // Finally, apply the filter 
+    projectCards.forEach(card => {
+        const projectTags = JSON.parse(card.getAttribute('data-tags'));
+        
+        // If the project has the selected tag, show it; otherwise, hide it
+        if (projectTags.includes(clickedTag) || clickedTag === 'all') {
+            card.style.display = 'inline-block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
 }
