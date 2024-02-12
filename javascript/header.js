@@ -19,6 +19,7 @@ header.innerHTML =
         text-align: left;
         position: relative;
         color:#363636;
+        padding: 4px;
         border: 1px solid #FFFFFF;
         border-radius: 16px;
     }

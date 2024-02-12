@@ -11,14 +11,14 @@ body {
 }
 
 .img-right {
-  max-width: 50%;
+  max-width: 45%;
   max-height: 90%;
   float: right;
   margin-left: 5%;
 }
 
 .img-left {
-  max-width: 50%;
+  max-width: 45%;
   max-height: 90%;
   float: left;
   margin-right: 5%;
