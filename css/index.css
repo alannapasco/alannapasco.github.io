@@ -72,7 +72,7 @@ hr {
 
 @media print, screen and (max-width: 960px) {
 
-  body {
+  /* body {
     width:auto;
     margin:0;
     text-align: center;
@@ -100,11 +100,11 @@ hr {
     float:none;
     position:relative;
     -webkit-font-smoothing:subpixel-antialiased;
-  }
+  } */
 }
 
 @media print, screen and (max-width: 480px) {
-  header {
+  /* header {
     width: 100%;
     font-size: 25px;
     text-align: left;
@@ -118,7 +118,7 @@ hr {
     padding-bottom: 0.5%;
     bottom: 0;
     right: 0;
-  }
+  } */
 }
 
 
