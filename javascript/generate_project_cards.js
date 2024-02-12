@@ -44,6 +44,18 @@ const projects = [
         highlights: ``,
     },
     {
+        title: "Khoury College Graduation Student Speaker",
+        tags: ["speaking", "leadership"],
+        context: "Selected to be Graduation Student Speaker - May 2023",
+        tools: "Voice",
+        github_link: "not available",
+        image: "resources/workimg_gradspeech.png",
+        image_alt: "A photo taken at the 2023 Khoury College Graduation Ceremony that shows the stage and me speaking at the podium",
+        description:`In May 2023 I was selected as student speaker at Northeastern's Khoury College of Computer Sciences graduation ceremony. <a target="_blank" href="https://www.youtube.com/watch?v=8-pUWGD0R64&start=41:25">Watch my corny speech here</a>. <br><br><br><br><br>`,
+        highlights_description:'',
+        highlights: '',
+    },
+    {
         title: "Programming Languages & Systematic Engineering",
         tags: ["code-project"],
         context: "Independent Study under Professor M. Felleisen - Spring 2023",
@@ -84,6 +96,21 @@ const projects = [
         <li>Resolved race condition using Java's Future and ExecutorService to track progress of asynchronous tasks</li>`,
     },
     {
+        title: "3x First Gen Panel Speaker",
+        tags: ["speaking", "leadership"],
+        context: "Invited to speak on first gen week panels three years in a row",
+        tools: "Voice",
+        github_link: "not available",
+        image: "resources/workimg_firstgenpanel.jpeg",
+        image_alt: "A screenshot of a digital flyer advertising the first gen panel I spoke on with all speakers photos and names",
+        description:`
+        <i>'First-generation college student' is often defined as a student whose parents/guardians have not earned a four-year degree in the U.S.</i>
+        <br><br>
+        I still remember the first time Northeastern recognized first gen students back in 2019 in our first ever <a target="_blank" href="https://cie.northeastern.edu/programs/1st-gen-week/">First Gen Week celebration</a>. Nothing prepared me for the emotional rollar coaster of the first gen open mic - a session in which anyone around the room could grab the mic and give their first gen testimony. Up until that point, it felt like I was the single only person on campus having the first gen experience. Today, as a proud first generation college alumn and the first person in my family to attain a masters degree, I understand how important it is for first gen students to have knowledge, wisdom, support, and hindsight passed to them from those of us who are further along in our journey - it's the precise thing that we lack as first gen students. With that, it is an absolute honor to continue connecting with and supporting my fellow first gen students at Northeastern by being invited back to speak every year as a panelist during First Gen Week. ☝🏻 `,
+        highlights_description:'',
+        highlights: '',
+    },
+    {
         title: "Fish Game Server",
         tags: ["code-project"],
         context: "CS 4500 Software Development - Fall 2020",
@@ -106,6 +133,18 @@ const projects = [
         <li>Designed and wrote <b>player API</b> protocol documentation</li>
         <li>Made design decisions mindful of potential security threats to internal system</li>
         <li>Implemented <b>remote-proxy pattern</b>, bringing together the server-side game system and client-side AI players</li>`,
+    },
+    {
+        title: "Personal Portfolio Workshop - Hosted by Khoury Masters Student Council",
+        tags: ["speaking", "leadership"],
+        context: "KMSC - 2020 and 2021",
+        tools: "HTML/css/Javacsript, GitHub Pages",
+        github_link: "not available",
+        image: "resources/workimg_kmscworkshop.png",
+        image_alt: "A screenshot of an invitation to the workshop",
+        description:`From Jan 2021 - May 2022 I served as Treasurer of the Khoury Masters Student Council (KMSC), a student-led organization that planned, funded, and hosted enriching monthly activities for <a target="_blank" href="https://www.khoury.northeastern.edu">Khoury</a> masters students to network and learn from one another. After making this dinky portfolio and realizing how fun and easy it is to host on <a target="_blank" href="https://pages.github.com">GitHub Pages</a>, I conducted two personal portfolio workshops with ~20 students in attendance each where we explored different ways to represent students' programming experience in portfolio format and got students up and running with Github Pages.`,
+        highlights_description: "",
+        highlights: "",
     },
     {
         title: "Personal Portfolio - this website",
