@@ -142,7 +142,7 @@ const projects = [
         github_link: "not available",
         image: "resources/workimg_kmscworkshop.png",
         image_alt: "A screenshot of an invitation to the workshop",
-        description:`From Jan 2021 - May 2022 I served as Treasurer of the Khoury Masters Student Council (KMSC), a student-led organization that planned, funded, and hosted enriching monthly activities for <a target="_blank" href="https://www.khoury.northeastern.edu">Khoury</a> masters students to network and learn from one another. After making this dinky portfolio and realizing how fun and easy it is to host on <a target="_blank" href="https://pages.github.com">GitHub Pages</a>, I conducted two personal portfolio workshops with ~20 students in attendance each where we explored different ways to represent students' programming experience in portfolio format and got students up and running with Github Pages.`,
+        description:`From Jan 2021 - May 2022 I served as Treasurer of the Khoury Masters Student Council (KMSC), a student-led organization that planned, funded, and hosted enriching monthly activities for <a target="_blank" href="https://www.khoury.northeastern.edu">Khoury</a> masters students to network and learn from one another. After making this simple portfolio and realizing how fun and easy it is to host on <a target="_blank" href="https://pages.github.com">GitHub Pages</a>, I conducted two personal portfolio workshops with ~20 students in attendance each where we explored different ways to represent students' programming experience in portfolio format and got students up and running with Github Pages.`,
         highlights_description: "",
         highlights: "",
     },
@@ -155,7 +155,7 @@ const projects = [
         github_link: "https://github.com/alannapasco/alannapasco.github.io",
         image: "resources/workimg_website_figma.png",
         image_alt: "A screenshot of figma.com showcasing the design of this personal website/portfolio",
-        description: `In Fall 2021 I was applying to dozens of coops when I noticed most applications had an optional field for a personal website/portfolio. I decided I wanted to have something for those boxes and with virtually no web development experience what-so-ever threw together this static af website in 24 hours.`,
+        description: `In Fall 2021 I was applying to dozens of coops when I noticed most applications had an optional field for a personal website/portfolio. I decided I wanted to have something for those boxes and with virtually no web development experience what-so-ever threw together this mostly static website in 24 hours.`,
         highlights_description: `<br><br>Things I am slowly but surely using this website to learn:`,
         highlights: ` 
             <li>figma</li>
