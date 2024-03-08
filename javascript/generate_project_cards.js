@@ -23,12 +23,12 @@ const projects = [
         github_link: "not available",
         image: "resources/workimg_awsefs.png",
         image_alt: "The Amazon Web Services logo",
-        description: `During this internship I spearheaded the integration of AWS AppConfig into existing EFS components, first enabling the dynamic configuration of canary test workflows. The project outcomes significantly reduced operator burden by enabling the toggling of problematic workflows during maintenance, enabled the team to practice resource frugality by introducing selective/environment-dependent workflow enabling. Eight months after my internship ended I had the gratitude of returning to EFS full time and observing that my implemented solution had continued to enhance operational efficency.`,
+        description: `During this internship I spearheaded the integration of AWS AppConfig into existing an EFS component, enabling the dynamic configuration of canary test workflows. The project outcomes reduced operator burden by enabling the toggling of problematic workflows during maintenance, and enabled the team to practice resource frugality by introducing selective/environment-dependent workflow enabling. Eight months after my internship I had the gratitude of returning to EFS full time and observing that my implemented solution had continued to enhance operational efficency.`,
         highlights_description: "<br><br>Project Highlights:",
         highlights: `
             <li>Reduced customer-impacting failures by designing, implementing dynamic configuration mechanism for canary tests</li>
             <li>Limited the creation of unused resources by developing unique configurations for canary deployment to select regions</li>
-            <li>Mitigated canary false alarms via more robust test sets, instant config update/deployment, and robust config validation</li>`,
+            <li>Mitigated canary false alarms via more robust test sets, instant config update, deployment, and validation</li>`,
     },
     {
         title: "Chewy Co-op - Practice Hub Prescription Management",
@@ -106,7 +106,7 @@ const projects = [
         description:`
         <i>'First-generation college student' is often defined as a student whose parents/guardians have not earned a four-year degree in the U.S.</i>
         <br><br>
-        I still remember the first time Northeastern recognized first gen students back in 2019 in our first ever <a target="_blank" href="https://cie.northeastern.edu/programs/1st-gen-week/">First Gen Week celebration</a>. Nothing prepared me for the emotional rollar coaster of the first gen open mic - a session in which anyone around the room could grab the mic and give their first gen testimony. Up until that point, it felt like I was the single only person on campus having the first gen experience. Today, as a proud first generation college alumn and the first person in my family to attain a masters degree, I understand how important it is for first gen students to have knowledge, wisdom, support, and hindsight passed to them from those of us who are further along in our journey - it's the precise thing that we lack as first gen students. With that, it is an absolute honor to continue connecting with and supporting my fellow first gen students at Northeastern by being invited back to speak every year as a panelist during First Gen Week. ☝🏻 `,
+        I still remember the first time Northeastern recognized first gen students back in 2019 in our first ever <a target="_blank" href="https://cie.northeastern.edu/programs/1st-gen-week/">First Gen Week celebration</a>. Nothing prepared me for the emotional roller coaster of the first gen open mic - a session in which anyone around the room could grab the mic and give their first gen testimony. Up until that point, it felt like I was the single only person on campus having the first gen experience. Today, as a proud first generation college alumn and the first person in my family to attain a masters degree, I understand how important it is for first gen students to have knowledge, wisdom, support, and hindsight passed to them from those of us who are further along in our journey - it's the precise thing that we lack as first gen students. With that, it is an absolute honor to continue connecting with and supporting my fellow first gen students at Northeastern by being invited back to speak every year as a panelist during First Gen Week. ☝🏻 `,
         highlights_description:'',
         highlights: '',
     },
