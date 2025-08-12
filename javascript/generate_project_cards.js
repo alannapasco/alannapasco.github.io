@@ -51,7 +51,7 @@ const projects = [
         github_link: "not available",
         image: "resources/workimg_gradspeech.png",
         image_alt: "A photo taken at the 2023 Khoury College Graduation Ceremony that shows the stage and me speaking at the podium",
-        description:`In May 2023 I was selected as student speaker at Northeastern's Khoury College of Computer Sciences graduation ceremony. <a target="_blank" href="https://www.youtube.com/watch?v=8-pUWGD0R64&start=41:25">Watch my corny speech here</a>. <br><br><br><br><br>`,
+        description:`In May 2023 I was selected as student speaker at Northeastern's Khoury College of Computer Sciences graduation ceremony. <a target="_blank" href="https://youtu.be/8-pUWGD0R64?si=-BDiXlV574hRo2_2&t=2489">Watch my corny speech here</a>. <br><br><br><br><br>`,
         highlights_description:'',
         highlights: '',
     },
